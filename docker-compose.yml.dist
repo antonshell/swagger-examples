@@ -1,0 +1,12 @@
+version : '2'
+services:
+    swagger-ui:
+        build: ./docker/swagger-ui
+        container_name: swagger-ui
+        #environment: "API_URL: https://petstore.swagger.io/v2/swagger.json"
+        ports:
+          - 8070:8080
+        volumes:
+          - ./swagger/openapi.json:/openapi.json
+        environment:
+          SWAGGER_JSON: /openapi.json
