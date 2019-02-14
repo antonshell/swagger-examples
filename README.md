@@ -17,7 +17,7 @@ cp _config.php.dist _config.php
 cp docker-compose.yml.dist docker-compose.yml
 ```
 
-3 . Start elastic 
+3 . Start swagger 
 
 ```
 docker-compose up
